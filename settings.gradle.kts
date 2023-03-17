@@ -1,1 +1,1 @@
-rootProject.name = "Custom-Pageable"
+rootProject.name = "custom-pageable"
