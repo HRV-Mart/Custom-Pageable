@@ -7,11 +7,10 @@ on:
   push:
     branches:
       - 'master'
-
 env:
-  MONGODB_URI: 'mongodb://localhost:27017'
-  APPLICATION_PORT: '8080'
-
+  VERSION: "0.0.1-SNAPSHOT"
+  USERNAME: ${{ secrets.OSSRH_USERNAME }}
+  TOKEN: ${{ secrets.OSSRH_TOKEN }}
 jobs:
   build:
     name: Build
