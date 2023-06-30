@@ -27,19 +27,3 @@ object CustomPageRequest {
     private fun sizeLimit(size: Int) =
         min(maxSize, max(minSize, size))
 }
-data class Pageable<T>(
-    val size: Long,
-    val nextPage: Long?,
-    val data: List<T>
-) {
-    companion object {
-        fun getNextPage(pageSize: Long, page: Long, totalSize: Long) =
-            if ((page + 1)*pageSize >= totalSize) {
-                null
-            }
-            else{
-                page + 1
-            }
-
-    }
-}
