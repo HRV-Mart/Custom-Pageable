@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.1.4"
+    id("org.springframework.boot") version "3.2.0"
     id("io.spring.dependency-management") version "1.1.2"
     id("io.gitlab.arturbosch.detekt").version("1.23.1") // This is to add detekt
     kotlin("jvm") version "1.9.0"
