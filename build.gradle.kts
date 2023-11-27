@@ -44,7 +44,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
     // Detekt
-    detektPlugins ("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.1")
+    detektPlugins ("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.4")
 }
 detekt {
     toolVersion = "1.23.1"
