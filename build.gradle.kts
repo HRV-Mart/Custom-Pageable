@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "3.1.4"
     id("io.spring.dependency-management") version "1.1.2"
-    id("io.gitlab.arturbosch.detekt").version("1.23.1") // This is to add detekt
+    id("io.gitlab.arturbosch.detekt").version("1.23.8") // This is to add detekt
     kotlin("jvm") version "1.9.0"
     kotlin("plugin.spring") version "1.9.0"
     `maven-publish`
@@ -44,7 +44,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
     // Detekt
-    detektPlugins ("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.1")
+    detektPlugins ("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.8")
 }
 detekt {
     toolVersion = "1.23.1"
